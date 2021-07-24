@@ -86,6 +86,46 @@ main {
 }
 
 
+/* Gallery section start */
+
+.gallerys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 25px;
+}
+
+.gallery img {
+    width: 370px;
+    height: 300px;
+}
+
+
+/* host citys section */
+
+.host {
+    background: #F3F1FF;
+    padding: 50px;
+}
+
+.host-citys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+}
+
+.single-citys {
+    border: 3px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.city-image img {
+    width: 250px;
+}
+
+
 /* Footer section start */
 
 footer {
@@ -133,7 +173,11 @@ Media Query
     .banner-image {
         margin-top: 20px;
     }
-    .players {
+    .players,
+    .gallerys {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .host-citys {
         grid-template-columns: repeat(1, 1fr);
     }
 }
